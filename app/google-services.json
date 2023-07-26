@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "447512043278",
+    "firebase_url": "https://studentverse-4fb86-default-rtdb.firebaseio.com",
+    "project_id": "studentverse-4fb86",
+    "storage_bucket": "studentverse-4fb86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447512043278:android:042ab74e5c3808902e015f",
+        "android_client_info": {
+          "package_name": "com.example.studentverse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447512043278-7lknamqehaqvarn2defk85e52dmo6qql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgXjkxklETtnre9cKj0oKr9GWed8Pga9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447512043278-7lknamqehaqvarn2defk85e52dmo6qql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

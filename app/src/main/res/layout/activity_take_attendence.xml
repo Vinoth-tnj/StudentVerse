@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".TakeAttendence">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/roundborder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089999974"
+        app:srcCompat="@drawable/atten_user" />
+
+    <Button
+        android:id="@+id/present_btn"
+        android:layout_width="130dp"
+        android:layout_height="76dp"
+        android:text="Present"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:backgroundTint="#05C30D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_txt"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <Button
+        android:id="@+id/absentbtn"
+        android:layout_width="128dp"
+        android:layout_height="76dp"
+        android:text="Absent"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:backgroundTint="#EC0202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toEndOf="@+id/present_btn"
+        app:layout_constraintTop_toBottomOf="@+id/name_txt"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <EditText
+        android:id="@+id/name_txt"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/roundborder"
+        android:ems="10"
+        android:hint="Enter the name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Internals">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:text="Internals"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#92FFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/stu_inter"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="6dp"
+                android:paddingLeft="10dp"
+                android:text="Student Name :"
+                android:textColor="#0B0A0A" />
+
+            <Spinner
+                android:id="@+id/spinnerstu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#C5C3C3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingTop="4dp"
+            android:background="#92FFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sem"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="3dp"
+                android:paddingLeft="10dp"
+                android:text="Semester :"
+                android:textColor="#0B0A0A" />
+
+            <Spinner
+                android:id="@+id/spinnersem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#C5C3C3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subject1_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="Subject1 :"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/subject1_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Subject Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mark1_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:text="Mark1 :"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/mark1_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Mark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subject2_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="Subject2 :"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/subject2_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Subject Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mark2_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:text="Mark2 :"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/mark2_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Mark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subject3_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="Subject3 :"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/subject3_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Subject Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mark3_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:text="Mark3 :"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/mark3_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Mark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subject4_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="Subject4 :"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/subject4_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Subject Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mark4_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:text="Mark4 :"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/mark4_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Mark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subject5_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="Subject5 :"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/subject5_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Subject Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mark5_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:text="Mark5 :"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/mark5_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Mark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subject6_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="Subject6 :"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/subject6_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Subject Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mark6_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:text="Mark6 :"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/mark6_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Mark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subject7_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="Subject7 :"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/subject7_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Subject Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mark7_inter"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:text="Mark7 :"
+                android:textColor="#0B0A0A" />
+
+            <EditText
+                android:id="@+id/mark7_inter_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Mark" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/updatebtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Update" />
+
+    </LinearLayout>
+
+</ScrollView>

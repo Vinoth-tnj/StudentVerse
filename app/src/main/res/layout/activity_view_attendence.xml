@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    tools:context=".ViewAttendence">
+
+    <Button
+        android:id="@+id/fetchbtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="View" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#92FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/period"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="Period :"
+            android:textColor="#0B0A0A" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/present_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="23dp"
+                android:background="#D76BED4D"
+                android:text="Presentees"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <ListView
+                android:id="@+id/present_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D7A5ED94" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/absent_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="23dp"
+                android:background="#F14848"
+                android:text="Absentees"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <ListView
+                android:id="@+id/absent_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F69191" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

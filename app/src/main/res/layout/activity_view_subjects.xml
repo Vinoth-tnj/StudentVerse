@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewSubjects">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/inter_txt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:text="Subject"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#92FFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/semester_txt"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Semester :"
+                android:textAlignment="center"
+                android:textColor="#0B0A0A"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:background="#40FFFFFF" />
+
+            <Button
+                android:id="@+id/fetchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="View" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/error"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#92FFFFFF"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/error_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Select Semester"
+                android:textAlignment="center"
+                android:textColor="#F30606"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/sub_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="23dp"
+                    android:background="#2196F3"
+                    android:text="Subject - Staff"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone"
+                    android:textColor="#000000" />
+
+                <ListView
+                    android:id="@+id/sub_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#6FC7EF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/staff_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="23dp"
+                    android:background="#2196F3"
+                    android:text="Syllabus"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone"
+                    android:textColor="#000000" />
+
+                <ListView
+                    android:id="@+id/staff_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#6FC7EF" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
